@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://Goca1234:Goca1234@devconnect-k7npu.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://Goca1234:Goca1234@devconnect-k7npu.mongodb.net/test?retryWrites=true&w=majority",
+  "jwt":"jwtSecret"
 }
