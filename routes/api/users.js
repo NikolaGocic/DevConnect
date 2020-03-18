@@ -1,5 +1,6 @@
 const express = require("express");
 const User = require("../../model/User");
+const Profile = require("../../model/Profile");
 const gravatar = require("gravatar");
 const jwt = require("jsonwebtoken");
 const auth = require("../../middleware/auth");
@@ -10,8 +11,8 @@ const router = express.Router();
 //@route /api/users/register
 //@desc Register users
 router.post(
-    "/register",
-        //Cheking data for iregularities
+     "/register",
+     //Cheking data for iregularities
      [
           check("name", "Name must not be empty")
                .not()
@@ -23,52 +24,68 @@ router.post(
           ).isLength({
                min: 6
           })
-    ],
-        //Main fucntion that returns token after suc register
+     ],
+     //Main fucntion that returns token after suc register
      async (req, res) => {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json(errors.array());
-            }
-            
-            try {
-                const { name, email, password } = req.body;
-                let user = await User.findOne({ email });
-                
-                if (user) return res.status(400).json({ error: "user alredy exists" });
-                
-                const avatar = gravatar.url(email, {      // User avatar
-                        s: "200",
-                        r: "pg",
-                        d: "mm"
-                });
+          const errors = validationResult(req);
+          if (!errors.isEmpty()) {
+               return res.status(400).json(errors.array());
+          }
 
-                user = new User({ name, email, avatar, password }); //Saving user to db
-                await user.save();
+          try {
+               const { name, email, password } = req.body;
+               let user = await User.findOne({ email });
 
-                const payload = { user: { id: user.id } };
+               if (user)
+                    return res
+                         .status(400)
+                         .json({ error: "user alredy exists" });
 
-                jwt.sign(payload, config.get("jwt"), (err, token) => {
-                        if (err) throw err;
-                        res.json({ token });
-                });
+               const avatar = gravatar.url(email, {
+                    // User avatar
+                    s: "200",
+                    r: "pg",
+                    d: "mm"
+               });
 
+               user = new User({ name, email, avatar, password }); //Saving user to db
+               await user.save();
 
-            } catch (err) {
-                res.status(500).send("Server error");
-            }
+               const payload = { user: { id: user.id } };
+
+               jwt.sign(payload, config.get("jwt"), (err, token) => {
+                    if (err) throw err;
+                    res.json({ token });
+               });
+          } catch (err) {
+               res.status(500).send("Server error");
+          }
      }
 );
 
-router.get('/allUsers', auth, async (req, res) => { 
-    try {
-        let users = await User.find();
-        res.json(users);
-    } catch (error) {
-        res.status(500).send('Server error');
-    }
+//@route /api/users/allUsers
+//@desc returns all users in the database
+router.get("/allUsers", auth, async (req, res) => {
+     try {
+          let users = await User.find();
+          res.json(users);
+     } catch (error) {
+          res.status(500).send("Server error");
+     }
 });
 
-
+//@route /api/users/allUsers
+//@desc returns all users in the database
+router.delete("/", auth, async (req, res) => {
+     try {
+          await Profile.findOneAndRemove({ user: req.user.id });
+          await User.findOneAndRemove(
+               { _id: req.user.id },
+               res.send("User suc deleted")
+          );
+     } catch (error) {
+          res.status(500).send(error.message);
+     }
+});
 
 module.exports = router;

@@ -1,0 +1,15 @@
+filename, language, JSON, JavaScript, comment, blank, total
+d:\nikola\Programming\DevConnect\DevConnect\config\db.js, JavaScript, 0, 17, 0, 3, 20
+d:\nikola\Programming\DevConnect\DevConnect\config\default.json, JSON, 4, 0, 0, 1, 5
+d:\nikola\Programming\DevConnect\DevConnect\middleware\auth.js, JavaScript, 0, 16, 0, 8, 24
+d:\nikola\Programming\DevConnect\DevConnect\model\Post.js, JavaScript, 0, 0, 0, 1, 1
+d:\nikola\Programming\DevConnect\DevConnect\model\Profile.js, JavaScript, 0, 111, 0, 4, 115
+d:\nikola\Programming\DevConnect\DevConnect\model\User.js, JavaScript, 0, 24, 0, 2, 26
+d:\nikola\Programming\DevConnect\DevConnect\package-lock.json, JSON, 2497, 0, 0, 1, 2498
+d:\nikola\Programming\DevConnect\DevConnect\package.json, JSON, 34, 0, 0, 1, 35
+d:\nikola\Programming\DevConnect\DevConnect\routes\api\auth.js, JavaScript, 0, 44, 4, 10, 58
+d:\nikola\Programming\DevConnect\DevConnect\routes\api\posts.js, JavaScript, 0, 4, 0, 3, 7
+d:\nikola\Programming\DevConnect\DevConnect\routes\api\profiles.js, JavaScript, 0, 84, 4, 15, 103
+d:\nikola\Programming\DevConnect\DevConnect\routes\api\users.js, JavaScript, 0, 57, 4, 14, 75
+d:\nikola\Programming\DevConnect\DevConnect\server.js, JavaScript, 0, 11, 0, 3, 14
+Total, -, 2535, 368, 12, 66, 2981
