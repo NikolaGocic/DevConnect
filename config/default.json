@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://Goca1234:Goca1234@devconnect-k7npu.mongodb.net/test?retryWrites=true&w=majority",
-  "jwt":"jwtSecret"
+  "jwt":"jwtSecret",
+  "githubClientId":"edc3758ea230800f998b",
+  "githubSecret":"9b76c1fcb34b335ef4be5e6a4e6d28aa6286f22e"
 }
