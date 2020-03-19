@@ -278,6 +278,7 @@ router.delete('/deleteEdu/:edu_id', auth, async (req,res)=> {
 
 //@route /profiles/github/:username
 //@desc Get client github repost
+//@acc ko ga jebe samo da se ne zavrsi na 666
 router.get('/github/:username', auth, async (req, res) => { 
     try {
         const options = {
