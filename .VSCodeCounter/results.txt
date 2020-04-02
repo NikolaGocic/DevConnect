@@ -1,25 +1,25 @@
-Date : 2020-03-18 01:33:20
+Date : 2020-03-19 23:38:24
 Directory : d:\nikola\Programming\DevConnect\DevConnect
-Total : 13 files,  3100 codes, 34 comments, 73 blanks, all 3207 lines
+Total : 13 files,  3293 codes, 44 comments, 95 blanks, all 3432 lines
 
 Languages
 +------------+------------+------------+------------+------------+------------+
 | language   | files      | code       | comment    | blank      | total      |
 +------------+------------+------------+------------+------------+------------+
 | JSON       |          3 |      2,537 |          0 |          3 |      2,540 |
-| JavaScript |         10 |        563 |         34 |         70 |        667 |
+| JavaScript |         10 |        756 |         44 |         92 |        892 |
 +------------+------------+------------+------------+------------+------------+
 
 Directories
 +--------------------------------------------------------------------+------------+------------+------------+------------+------------+
 | path                                                               | files      | code       | comment    | blank      | total      |
 +--------------------------------------------------------------------+------------+------------+------------+------------+------------+
-| .                                                                  |         13 |      3,100 |         34 |         73 |      3,207 |
+| .                                                                  |         13 |      3,293 |         44 |         95 |      3,432 |
 | config                                                             |          2 |         24 |          0 |          4 |         28 |
 | middleware                                                         |          1 |         16 |          0 |          8 |         24 |
-| model                                                              |          3 |        135 |          0 |          7 |        142 |
-| routes                                                             |          4 |        383 |         34 |         49 |        466 |
-| routes\api                                                         |          4 |        383 |         34 |         49 |        466 |
+| model                                                              |          3 |        187 |          0 |          8 |        195 |
+| routes                                                             |          4 |        524 |         44 |         70 |        638 |
+| routes\api                                                         |          4 |        524 |         44 |         70 |        638 |
 +--------------------------------------------------------------------+------------+------------+------------+------------+------------+
 
 Files
@@ -29,15 +29,15 @@ Files
 | d:\nikola\Programming\DevConnect\DevConnect\config\db.js           | JavaScript |         18 |          0 |          3 |         21 |
 | d:\nikola\Programming\DevConnect\DevConnect\config\default.json    | JSON       |          6 |          0 |          1 |          7 |
 | d:\nikola\Programming\DevConnect\DevConnect\middleware\auth.js     | JavaScript |         16 |          0 |          8 |         24 |
-| d:\nikola\Programming\DevConnect\DevConnect\model\Post.js          | JavaScript |          0 |          0 |          1 |          1 |
+| d:\nikola\Programming\DevConnect\DevConnect\model\Post.js          | JavaScript |         52 |          0 |          2 |         54 |
 | d:\nikola\Programming\DevConnect\DevConnect\model\Profile.js       | JavaScript |        111 |          0 |          4 |        115 |
 | d:\nikola\Programming\DevConnect\DevConnect\model\User.js          | JavaScript |         24 |          0 |          2 |         26 |
 | d:\nikola\Programming\DevConnect\DevConnect\package-lock.json      | JSON       |      2,497 |          0 |          1 |      2,498 |
 | d:\nikola\Programming\DevConnect\DevConnect\package.json           | JSON       |         34 |          0 |          1 |         35 |
 | d:\nikola\Programming\DevConnect\DevConnect\routes\api\auth.js     | JavaScript |         50 |          4 |          8 |         62 |
-| d:\nikola\Programming\DevConnect\DevConnect\routes\api\posts.js    | JavaScript |          4 |          0 |          3 |          7 |
+| d:\nikola\Programming\DevConnect\DevConnect\routes\api\posts.js    | JavaScript |        145 |         10 |         24 |        179 |
 | d:\nikola\Programming\DevConnect\DevConnect\routes\api\profiles.js | JavaScript |        257 |         21 |         27 |        305 |
 | d:\nikola\Programming\DevConnect\DevConnect\routes\api\users.js    | JavaScript |         72 |          9 |         11 |         92 |
 | d:\nikola\Programming\DevConnect\DevConnect\server.js              | JavaScript |         11 |          0 |          3 |         14 |
-| Total                                                              |            |      3,100 |         34 |         73 |      3,207 |
+| Total                                                              |            |      3,293 |         44 |         95 |      3,432 |
 +--------------------------------------------------------------------+------------+------------+------------+------------+------------+
